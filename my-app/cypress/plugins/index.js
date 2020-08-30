@@ -14,10 +14,11 @@
 
 module.exports = (on, config) => {
   require('@cypress/code-coverage/task')(on, config)
-  // include any other plugin code...
+  // tell Cypress to use .babelrc file
+  // and instrument the specs files
+  // only the extra application files will be instrumented
+  // not the spec files themselves
 
-  // It's IMPORTANT to return the config object
-  // with any changed environment variables
   return config
 }
 
