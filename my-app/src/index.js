@@ -37,6 +37,8 @@ class Login extends React.Component {
 
     if((this.state.email === "mustafa@sulzer.de") && (this.state.password === "Password1!")){
       title.innerHTML = "Login erfolgreich: Mustafa Masetic! 🤙";
+    }else if((this.state.email === "mustafa.masetic@sulzer.de") && (this.state.password === "Password1!")){
+      title.innerHTML = "Login erfolgreich: Mustafa Masetic! 🤙";
     }else{
       title.innerHTML = "Falsche E-mail Adresse oder Passwort! 😲";
     }
